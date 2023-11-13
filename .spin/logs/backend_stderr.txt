@@ -1,0 +1,37 @@
+Handler returned an error: AttributeError: 'bytes' object has no attribute 'data'
+Handler returned an error: AttributeError: 'builtins.Response' object has no attribute 'json'
+Handler returned an error: TomlDecodeError: Found invalid character in key name: '"'. Try quoting the key name. (line 1 column 2 char 1)
+Handler returned an error: AttributeError: 'bytes' object has no attribute 'data'
+Handler returned an error: AttributeError: 'str' object has no attribute 'read'
+Handler returned an error: AttributeError: 'str' object has no attribute 'data'
+Handler returned an error: AttributeError: 'str' object has no attribute 'data'
+Handler returned an error: AttributeError: 'str' object has no attribute 'read'
+Handler returned an error: TypeError: dump() missing 1 required positional argument: 'fp'
+Handler returned an error: AttributeError: 'dict' object has no attribute 'data'
+Handler returned an error: TypeError: Request.__new__() got an unexpected keyword argument 'data'
+Handler returned an error: TypeError: argument 'body': 'dict' object cannot be converted to 'PyBytes'
+Handler returned an error: IndexError: list index out of range
+Handler returned an error: IndexError: list index out of range
+Handler returned an error: TypeError: Object of type datetime is not JSON serializable
+Handler returned an error: OSError: [Errno 8] Bad file descriptor: '/python'
+Handler returned an error: TypeError: strptime() takes exactly 2 arguments (1 given)
+Handler returned an error: OSError: [Errno 8] Bad file descriptor: '/python'
+Handler returned an error: OSError: [Errno 8] Bad file descriptor: '/python'
+Handler returned an error: OSError: [Errno 8] Bad file descriptor: '/python'
+Handler returned an error: OSError: [Errno 8] Bad file descriptor: '/python'
+Handler returned an error: OSError: [Errno 8] Bad file descriptor: '/python'
+Handler returned an error: AttributeError: 'list' object has no attribute 'split'
+Handler returned an error: TypeError: 'str' object cannot be interpreted as an integer
+Handler returned an error: OSError: [Errno 8] Bad file descriptor: '/python'
+Handler returned an error: OSError: [Errno 8] Bad file descriptor: '/python'
+Handler returned an error: ValueError: Invalid isoformat string: '0'
+Handler returned an error: ValueError: Invalid isoformat string: '0'
+Handler returned an error: TypeError: 'int' object is not subscriptable
+Handler returned an error: TypeError: 'int' object is not subscriptable
+Handler returned an error: AttributeError: 'dict' object has no attribute 'inputs'
+Handler returned an error: AssertionError: provider error: no provider resolved required variable "password"
+Handler returned an error: KeyError: 'data'
+Handler returned an error: KeyError: 'id'
+Handler returned an error: TypeError: argument 'headers': 'NoneType' object cannot be converted to 'PyDict'
+Handler returned an error: TypeError: argument 'body': 'dict' object cannot be converted to 'PyBytes'
+Handler returned an error: NameError: name 'payload' is not defined

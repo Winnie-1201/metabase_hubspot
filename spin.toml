@@ -1,0 +1,42 @@
+spin_manifest_version = "1"
+authors = ["Winnie <luwinnie12@gmail.com>"]
+description = ""
+name = "test"
+trigger = { type = "http", base = "/" }
+version = "0.2.0"
+
+[variables]
+token = { required = true }
+username = { required = true }
+password = { required = true }
+
+[[component]]
+id = "backend"
+source = "backend/app.wasm"
+allowed_http_hosts = [
+    "https://fermyon.metabaseapp.com",
+    "https://api.hubapi.com",
+]
+sqlite_databases = ["default"]
+[component.trigger]
+route = "/api/..."
+[component.build]
+command = "spin py2wasm app -o app.wasm"
+workdir = "backend"
+watch = ["app.py", "Pipfile"]
+[component.config]
+token = "{{token}}"
+username = "{{username}}"
+password = "{{password}}"
+metabase_host = "https://fermyon.metabaseapp.com"
+hubspot_host = "https://api.hubapi.com"
+
+[[component]]
+source = { url = "https://github.com/fermyon/spin-fileserver/releases/download/v0.0.2/spin_static_fs.wasm", digest = "sha256:65456bf4e84cf81b62075e761b2b0afaffaef2d0aeda521b245150f76b96421b" }
+id = "frontend"
+files = [{ source = "frontend/build", destination = "/" }]
+[component.trigger]
+route = "/..."
+[component.build]
+command = "npm run build"
+workdir = "frontend"
